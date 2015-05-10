@@ -98,7 +98,7 @@ header nav ul {
     font-size: 16px;
     @include clearfix;
     list-style: none;
-    padding: 0;
+    padding: 0 0 0 2px;
     margin: 0 0 10px;
 }
 
@@ -139,17 +139,17 @@ header .nav-selection {
 
 header .nav-selection.about {
     width: 44px;
-    left: 49px;
+    left: 0;
 }
 
 header .nav-selection.blog {
     width: 33px;
-    left: 0;
+    left: 135px;
 }
 
 header .nav-selection.projects {
     width: 60px;
-    left: 107px;
+    left: 59px;
 }
 
 header .subnav-selection {
@@ -159,30 +159,28 @@ header .subnav-selection {
   width: 50px;
 }
 
-header .subnav-selection.exemplar-home {
-  right: 140px;
+header .subnav-selection.home {
+  right: 126px;
   width: 42px;
 }
 
 header .subnav-selection.exemplar-docs {
-  right: 87px;
+  right: 74px;
   width: 35px;
 }
 
-header .subnav-selection.download {
+header .subnav-selection.resume {
   right: 0;
-  width: 69px;
+  width: 55px;
 }
 
 header .profile {
     float: right;
-    height: 58px;
     max-width: 84px;
-    margin-top: 14px;
+    margin-top: 50px;
 }
 
 header .social {
-    width: 16px;
     float: left;
 }
 
