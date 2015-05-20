@@ -142,14 +142,14 @@ header .nav-selection.about {
     left: 0;
 }
 
-header .nav-selection.blog {
-    width: 33px;
-    left: 135px;
+header .nav-selection.history {
+    width: 50px;
+    left: 61px;
 }
 
 header .nav-selection.projects {
-    width: 60px;
-    left: 59px;
+    width: 57px;
+    left: 129px;
 }
 
 header .subnav-selection {
@@ -160,12 +160,12 @@ header .subnav-selection {
 }
 
 header .subnav-selection.home {
-  right: 126px;
+  right: 124px;
   width: 42px;
 }
 
-header .subnav-selection.exemplar-docs {
-  right: 74px;
+header .subnav-selection.blog {
+  right: 72px;
   width: 35px;
 }
 
@@ -204,10 +204,6 @@ header .avatar {
     }
 }
 
-.github {
-  display: none;
-}
-
 footer {
     margin-top: 30px;
 }
@@ -232,6 +228,10 @@ footer nav ul li {
           @include omega;
         }
     }
+}
+
+#main {
+    padding-top: 30px;
 }
 
 ul, ol {
