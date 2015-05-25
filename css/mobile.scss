@@ -189,21 +189,6 @@ header .social img {
     margin: 9px 0;
 }
 
-header .avatar {
-    height: 58px;
-    width: 58px;
-    border: 2px solid $black;
-    float: left;
-    margin-left: 10px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-    @media (max-width: em(327)) {
-      display: none;
-    }
-}
-
 footer {
     margin-top: 30px;
 }
@@ -277,6 +262,41 @@ ul {
 
 .project h2 {
   font-size: 3em;
+}
+
+// History
+.work ul, .education ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.work ul li{
+    padding-bottom: 20px;
+}
+
+.work ul ul, .education ul ul{
+    list-style: square;
+    padding-left: 20px;
+}
+
+.work ul ul li{
+    padding-bottom: 0;
+}
+
+.work ul p, .education ul p{
+    margin: 0px;
+}
+
+.work ul p:first-child, .education ul p:first-child{
+    font-size: 1.2em;
+}
+
+.work ul p span.date {
+    color: #969696;
+}
+
+.see-more {
+    float: right;
 }
 
 .project:nth-child(2n) {

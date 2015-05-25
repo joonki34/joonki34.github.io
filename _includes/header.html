@@ -10,13 +10,13 @@
                 </a>
             </div>
         </div>
-        <h5 class="logo"><a href="{{ site.baseurl }}">Joonki Chung</a></h5>
+        <h5 class="logo"><a href="{{ site.baseurl }}/">Joonki Chung</a></h5>
         <nav class="main">
             <ul>
                 {% if page.nav == "about" %}
-                <li><a href="{{ site.baseurl }}" class="active">About</a></li>
+                <li><a href="{{ site.baseurl }}/" class="active">About</a></li>
                 {% else %}
-                <li><a href="{{ site.baseurl }}">About</a></li>
+                <li><a href="{{ site.baseurl }}/">About</a></li>
                 {% endif %}
                 {% if page.nav == "history" %}
                     <li><a href="{{ site.baseurl }}/history" class="active">History</a></li>
@@ -40,9 +40,9 @@
         <nav class="subnav">
             <ul>
                 {% if page.subnav == "home" %}
-                  <li><a href="/exemplar" class="active" data-subnav="home">Home</a></li>
+                  <li><a href="{{ site.baseurl }}/" class="active" data-subnav="home">Home</a></li>
                 {% else %}
-                    <li><a href="/exemplar" data-subnav="home">Home</a></li>
+                    <li><a href="{{ site.baseurl }}/" data-subnav="home">Home</a></li>
                 {% endif %}
                 {% if page.subnav == "blog" %}
                     <li><a href="http://joonki.tistory.com" target="_blank" class="active" data-subnav="blog">Blog</a></li>
