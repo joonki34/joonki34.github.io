@@ -2,11 +2,14 @@
     <div class="container">
         <div class="profile">
             <div class="social">
+                <a href="mailto:joonki34@gmail.com">
+                   <i class="fa fa-envelope-square fa-lg"></i>
+                </a>
                 <a href="https://www.linkedin.com/in/joonkichung" target="_blank">
                    <i class="fa fa-linkedin-square fa-lg"></i>
                 </a>
                 <a href="http://github.com/joonki34" target="_blank">
-                    <i class="fa fa-github fa-lg"></i>
+                    <i class="fa fa-github-square fa-lg"></i>
                 </a>
             </div>
         </div>
@@ -50,9 +53,9 @@
                     <li><a href="http://joonki.tistory.com" target="_blank" data-subnav="blog">Blog</a></li>
                 {% endif %}
                 {% if page.subnav == "resume" %}
-                    <li><a href="https://www.dropbox.com/s/w6kjmo7eqo3qekc/resume.pdf" target="_blank" class="active" data-subnav="resume">Resume</a></li>
+                    <li><a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" class="active" data-subnav="resume">Resume</a></li>
                 {% else %}
-                    <li><a href="https://www.dropbox.com/s/w6kjmo7eqo3qekc/resume.pdf" target="_blank" data-subnav="resume">Resume</a></li>
+                    <li><a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" data-subnav="resume">Resume</a></li>
                 {% endif %}
             </ul>
         </nav>
