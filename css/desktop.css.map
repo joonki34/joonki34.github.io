@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAGE,IAAK;EACH,UAAU,EAAE,UAAU;;;AAItB,sBAEU;EACR,UAAU,EAAE,OAAO;;;ACRzB,OAAQ;EACJ,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,aAAa;;;AAGzB,aAAc;EC2DV,KAAK,EAAE,IAAsB;EAG3B,OAAO,EAAE,KAAK;EAed,YAAoB,EAAE,QAA+B;EACrD,KAAK,EAAE,SAAuC;;EAE9C,wBAAa;IACX,YAAoB,EAAE,CAAC",
+"sources": ["../_sass/neat/grid/_box-sizing.scss","../_sass/desktop.scss","../_sass/neat/grid/_span-columns.scss"],
+"names": [],
+"file": "desktop.css"
+}
