@@ -57,6 +57,11 @@
                 {% else %}
                     <li><a href="{{ site.baseurl }}/assets/resume.pdf" target="_blank" data-subnav="resume">Resume</a></li>
                 {% endif %}
+                {% if page.subnav == "korean" %}
+                <li><a href="{{ site.baseurl }}/korean" class="active" target="_blank" data-subnav="korean">한국어</a></li>
+                {% else %}
+                <li><a href="{{ site.baseurl }}/korean" target="_blank" data-subnav="korean">한국어</a></li>
+                {% endif %}
             </ul>
         </nav>
     </div>

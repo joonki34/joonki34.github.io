@@ -158,18 +158,23 @@ header .subnav-selection {
 }
 
 header .subnav-selection.home {
-  right: 124px;
+  right: 186px;
   width: 42px;
 }
 
 header .subnav-selection.blog {
-  right: 72px;
+  right: 134px;
   width: 35px;
 }
 
 header .subnav-selection.resume {
-  right: 0;
+  right: 62px;
   width: 55px;
+}
+
+header .subnav-selection.korean {
+  right: 0;
+  width: 43px;
 }
 
 header .profile {
