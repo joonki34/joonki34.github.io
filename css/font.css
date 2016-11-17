@@ -106,5 +106,11 @@
   src: url("../font/source-code-pro/SourceCodePro-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/source-code-pro/SourceCodePro-Bold-webfont.woff") format("woff"), url("../font/source-code-pro/SourceCodePro-Bold-webfont.ttf") format("truetype"), url("../font/source-code-pro/SourceCodePro-Bold-webfont.svg#SourceCodeProBold") format("svg");
   font-weight: bolder;
   font-style: normal; }
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  src: url("../font/spoqa-han-sans/SpoqaHanSans-Regular.eot");
+  src: url("../font/spoqa-han-sans/SpoqaHanSans-Regular.eot?#iefix") format("embedded-opentype"), url("../font/spoqa-han-sans/SpoqaHanSans-Regular.woff") format("woff"), url("../font/spoqa-han-sans/SpoqaHanSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 /*# sourceMappingURL=font.css.map */
