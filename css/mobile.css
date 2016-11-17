@@ -9,7 +9,7 @@ html {
 
 /* line 16, ../_sass/mobile.scss */
 body {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Spoqa Han Sans", Helvetica, Arial, sans-serif;
   margin: 0;
   color: #444;
   font-size: 1.2em;
@@ -261,7 +261,7 @@ ul {
 
 /* line 244, ../_sass/mobile.scss */
 .post-header .date {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Spoqa Han Sans", Helvetica, Arial, sans-serif;
   text-decoration: lowercase;
   margin: 1em 0 -1.2em; }
 
@@ -331,7 +331,7 @@ ul {
   float: left;
   padding: 0.5em 0.4em 0.4em;
   margin-right: 0.4em;
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Spoqa Han Sans", Helvetica, Arial, sans-serif;
   font-size: 0.9em; }
 
 /* line 336, ../_sass/mobile.scss */

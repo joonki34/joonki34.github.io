@@ -3,7 +3,7 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-$sansFamily: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$sansFamily: 'Source Sans Pro', 'Spoqa Han Sans', Helvetica, Arial, sans-serif;
 $headingFamily: 'Bebas Neue', Helvetica, Arial, sans-serif;
 $white: #FFFFFF;
 $black: #111;
@@ -158,23 +158,23 @@ header .subnav-selection {
 }
 
 header .subnav-selection.home {
-  right: 186px;
+  right: 188px;
   width: 42px;
 }
 
 header .subnav-selection.blog {
-  right: 134px;
+  right: 136px;
   width: 35px;
 }
 
 header .subnav-selection.resume {
-  right: 62px;
+  right: 64px;
   width: 55px;
 }
 
 header .subnav-selection.korean {
   right: 0;
-  width: 43px;
+  width: 45px;
 }
 
 header .profile {
