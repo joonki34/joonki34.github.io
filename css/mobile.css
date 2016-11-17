@@ -164,23 +164,23 @@ header .subnav-selection {
 
 /* line 160, ../_sass/mobile.scss */
 header .subnav-selection.home {
-  right: 186px;
+  right: 188px;
   width: 42px; }
 
 /* line 165, ../_sass/mobile.scss */
 header .subnav-selection.blog {
-  right: 134px;
+  right: 136px;
   width: 35px; }
 
 /* line 170, ../_sass/mobile.scss */
 header .subnav-selection.resume {
-  right: 62px;
+  right: 64px;
   width: 55px; }
 
 /* line 175, ../_sass/mobile.scss */
 header .subnav-selection.korean {
   right: 0;
-  width: 43px; }
+  width: 45px; }
 
 /* line 180, ../_sass/mobile.scss */
 header .profile {
