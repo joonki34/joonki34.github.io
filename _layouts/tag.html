@@ -8,25 +8,19 @@ layout: page
   <p>{{ page.content }}</p>
 {% endunless %}
 
-{% unless site.tags[page.tag] | size > 0 %}
+{% unless site.tags[page.tag].size > 0 %}
   <p>No posts found.</p>
 {% endunless %}
 
 {% for post in site.tags[page.tag] %}
 <div class="post-preview">
     <a href="{{ post.url }}">
-        <h3 class="post-subtitle">            
+        <h3 class="post-subtitle">
             {{ post.title }}
         </h3>
     </a>
     <p class="post-meta">
-      Posted by 
-      {% if post.author %}
-        {{ post.author }}
-      {% else %}
-        {{ site.title }}
-      {% endif %} 
-      on {{ post.date | date: "%A, %B %-d, %Y" }}
+      Posted on {{ post.date | date: "%A, %B %-d, %Y" }}
     </p>
 </div>
 <hr>

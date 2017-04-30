@@ -30,13 +30,13 @@ wpm: 150
 # Build settings
 markdown: kramdown
 highlighter: rouge
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["README.md"]
 port: 8888
-permalink: /blog/:title
+permalink: /posts/:year/:month/:day/:title
 
 # jekyll-paginate. for paginating blog posts.
 paginate: 5
-paginate_path: blog/page:num
+paginate_path: posts/page/:num
 
 # gem dependencies
 gems: [jekyll-paginate, jekyll-feed, jekyll-gist]
