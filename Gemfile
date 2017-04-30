@@ -1,4 +1,11 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem "jekyll", "~> 0.11.2"
-gem "neat", "~> 1.0.0"
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-feed"
+  gem "html-proofer"
+  gem "rake"
+  gem "jekyll-gist"
+  gem "github-pages"
+
+end

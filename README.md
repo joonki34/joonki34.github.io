@@ -1,32 +1,39 @@
-#Exemplar
+## CleanBlogEnhanced jekyll template
+[![Build Status](https://travis-ci.org/ShikherVerma/Shikherverma.github.io.svg?branch=master)](https://travis-ci.org/ShikherVerma/Shikherverma.github.io)
 
-This is my jekyll site template. Used for blog and project pages.
+CleanBlogEnhanced is a ready-to-use template to help you create an awesome website quickly. Perfect for personal blogs or simple project websites.
 
-#Getting Started
+Jekyll blog based on [Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/).
 
-First, make sure you have the `jekyll` and `sass` gems installed. In your terminal run:
+List of features :
+* Subfolder for blog, landing page different than blog
+* Comments using Disqus
+* Website stats using Google Analytics
+* Email subscription using FeedBurner
+* Travis build script to verify build and external links
+* Read Time Estimation for blog posts
+* Blog post tags
+* Tag specific pages
+* Jekyll collection for portfolio
+* Serverless search using javascript
+* Minimalistic Error 404 page
+* A solid [guide](http://shikherverma.com/blog/Yet-Another-Jekyll-Blog) on how to customize or remove individual features.
 
-    gem install jekyll
-    gem install sass
+## Usage
 
-You can optionally install the *bourbon* gem in order to update the Bourbon folder:
+* Fork the repo
+* Rename to `username.github.io`
+* Modify the `_config` file
+* Replace all the posts and images with your data
+* In depth description of how to use this template is [here](http://shikherverma.com/blog/Yet-Another-Jekyll-Blog)
 
-    gem install bourbon
-    cd _sass
-    bourbon install
+## Questions, Bugs and Issues
 
-Start running Jekyll (defaults to port 4000) and watching Sass:
+Have a question about this template ?  
+Or want to report a bug or an issue with this template?  
+[Open a new issue](https://github.com/ShikherVerma/shikherverma.github.io/issues) here on GitHub
 
-    rake // 'rake watch' also works
+## Copyright and License
 
-Before deploying your site, stop `rake watch` and run `rake generate` to generate a production-ready site (no Scss comments).
-
-## Updating Bourbon
-
-In order to update the Bourbon folder:
-
-    cd _sass/
-    bourbon update
-    
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tybenz/exemplar/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+Copyright ShikherVerma.  
+All rights reserved for the content data under `_posts`, `_portfolio` and `_images`, the rest of the code is released under the [MIT](https://github.com/ShikherVerma/shikherverma.github.io/blob/gh-pages/LICENSE) license.

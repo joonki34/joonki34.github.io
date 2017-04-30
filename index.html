@@ -1,25 +1,40 @@
 ---
-title: Home
-nav: about
-subnav: home
-layout: default
+layout: page
+title: "Joonki Chung"
+description: "Cinephille / Software Engineer"
+header-img: "img/blog-bg.jpg"
 ---
-<p>
-	I am a software engineer at <a href="http://www.estsoft.co.kr/default.aspx" target="_blank">ESTsoft</a>. Currently, I am located in Seoul, Korea.
-</p>
 
-<p>
-	I love to learn new technologies and skills. As you can see on my resume, I have learned a lot of programming languages and various frameworks. Also, I like to spend time on increasing development productivity. For example, I have tried to improve webpack build performance and was able to speed up builds by 50%.
-</p>
+{% for post in paginator.posts %}
 
-<p>
-	I've been developing web applications using React/Redux and Spring framework at work recently. I have extensive experience in Android application development and published several applications. My area of interest is natural language processing.
-</p>
+<div class="post-preview">
+    <a href="{{ post.url }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+</div>
+<hr>
+{% endfor %}
 
-<p>
-	I graduated from the University of Utah with Bachelor of Science degree in Computer Science in 2013.
-</p>
-
-<p>
-	I would like to claim myself as a hardcore film buff. I have watched a lot of films and goes to the movie theater on a regular basis. I posts film reviews on my <a href="http://joonki.tistory.com" target="_blank">blog</a> in Korean.
-</p>
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
