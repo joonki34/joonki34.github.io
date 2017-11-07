@@ -14,7 +14,7 @@ tags: [ java ]
 Long sum = Stream.of("cat", "dog", "tiger", "lion")
                 // calculate()은 단어의 글자수를 구하는 함수.
                 // executor는 사전에 정의해둔 Executor. 쓰레드가 두개 이상인 Executor라고 가정하자.
-                .mapToLong(word -> CompletableFuture.supplyAsync(() -> calculate(), executor).join())
+                .mapToLong(word -> CompletableFuture.supplyAsync(() -> calculate(word), executor).join())
                 .sum();
 System.out.println(sum);
 ```
@@ -26,7 +26,7 @@ System.out.println(sum);
 Long sum = Stream.of("cat", "dog", "tiger", "lion")
                 // calculate()은 단어의 글자수를 구하는 함수.
                 // executor는 사전에 정의해둔 Executor. 쓰레드가 두개 이상인 Executor라고 가정하자.
-                .map(word -> CompletableFuture.supplyAsync(() -> calculate(), executor))
+                .map(word -> CompletableFuture.supplyAsync(() -> calculate(word), executor))
                 .mapToLong(CompletableFuture::join)
                 .sum();
 System.out.println(sum);
@@ -43,7 +43,7 @@ System.out.println(sum);
 List<CompletableFuture> futures = Stream.of("cat", "dog", "tiger", "lion")
                 // calculate()은 단어의 글자수를 구하는 함수.
                 // executor는 사전에 정의해둔 Executor. 쓰레드가 두개 이상인 Executor라고 가정하자.
-                .map(word -> CompletableFuture.supplyAsync(() -> calculate(), executor))
+                .map(word -> CompletableFuture.supplyAsync(() -> calculate(word), executor))
                 .collect(Collectors.toList()); // *중요*
 
 Long sum = futures.stream()
